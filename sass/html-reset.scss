@@ -1,0 +1,700 @@
+@import "base";
+
+// Vertical Rhythm
+$base-line-height: 18px !default;
+$base-font-size: 13px !default;
+$relative-font-sizing: true !default; // output px instead of em's. cuz em's are annoying.
+$base-em-ratio: 1em / $base-font-size !default; // used by the px-to-em function below
+
+$show-grid-backgrounds: false !default;
+
+// Font size constants
+$font-size-xxs: 10px !default;
+$font-size-xs: 11px !default;
+$font-size-sm: 12px !default;
+$font-size-normal: $base-font-size !default;
+$font-size-md: 14px !default;
+$font-size-lg: 18px !default;
+$font-size-xl: 20px !default;
+$font-size-xxl: 24px !default;
+$font-size-xxxl: 30px !default;
+
+// Converts px to em in case you do need relative units in your output.
+@function px-to-em($value, $em-ratio: $base-em-ratio) {
+  @return $value * $em-ratio;
+}
+
+// Vertical Rhythm borders
+$typographic-indent: 1.625em !default;
+
+// Font Stacks
+$header-font-family: Palatino, "Helvetica Neue",Helvetica,Arial,sans-serif !default;
+$text-font-family: "Helvetica Neue", "Helvetica", Arial, "Liberation Sans", FreeSans, sans-serif !default;
+$mono-font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
+
+@include establish-baseline($base-font-size);
+
+/* Headings/small */
+
+// Font sizes are based on the golden ratio of 16
+// See this for the modular scale: ow.ly/5jGl6
+// Line-heights and margins are adjusted to keep a 26px (1.625em) vertical rhythm across elements
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font-family;
+  font-size: px-to-em($base-font-size);
+  font-weight: normal;
+}
+
+h1 {
+  @include adjust-font-size-to($font-size-xxxl,2);
+  @include margin-leader(0, $font-size-xxxl);
+  @include margin-trailer(1, $font-size-xxxl);
+}
+
+h2 {
+  @include adjust-font-size-to($font-size-xxl,2);
+  @include margin-leader(0, $font-size-xxl);
+  @include margin-trailer(1, $font-size-xxl);
+}
+
+h3 {
+  @include adjust-font-size-to($font-size-xl,1);
+  @include margin-leader(0, $font-size-xl);
+  @include margin-trailer(1, $font-size-xl);
+}
+
+h4 {
+  @include adjust-font-size-to($font-size-lg,1);
+  @include margin-leader(0, $font-size-lg);
+  @include margin-trailer(1, $font-size-lg);
+}
+
+h5 {
+  @include adjust-font-size-to($font-size-md,1);
+  @include margin-leader(0, $font-size-md);
+  @include margin-trailer(1, $font-size-md);
+}
+
+h6 {
+  @include adjust-font-size-to($font-size-md,1);
+  @include margin-leader(0, $font-size-md);
+  @include margin-trailer(1, $font-size-md);
+  color: $text-color-light;
+}
+
+small {
+  @include margin-leader(0, $font-size-xxs);
+  @include margin-trailer(1, $font-size-xxs);
+  font-size: px-to-em($font-size-xxs);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  small {
+    color: $text-color-light;
+  }
+}
+
+//body {
+//  font-size: 100%;
+//  /* Fixes exaggerated text resizing in IE6 and IE7 */
+//  color: #555555;
+//}
+
+html {
+  font-size: 100%;
+  height: 100%;
+  // Prevent iOS text size adjust on orientation change without disabling user zoom.
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+#skip-link, #page {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset {
+
+//  font-family: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
+//  font-family: Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
+//  font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+
+//  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+//  font-family: Tahoma, Verdana, "DejaVu Sans", sans-serif;
+//  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+//  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+
+//  font-family: "Courier New", "DejaVu Sans Mono", monospace;
+
+  font-family: $text-font-family;
+}
+
+pre, code {
+  font-size: 1.1em;
+  /* Monospace fonts can be hard to read */
+  font-family: "Courier New", "DejaVu Sans Mono", monospace;
+}
+
+#name-and-slogan {
+  font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+}
+
+html.js fieldset.collapsible .fieldset-wrapper {
+  overflow: visible;
+}
+
+/*
+ * Headings
+ */
+
+//h1 {
+//  font-size: 1.5em;
+//  font-weight: normal;
+//  line-height: 1.3em;
+//  margin-top: 0;
+//  margin-bottom: 0.5em;
+//  /* 0.5em is equavalent to 1em in the page's base font.
+//     Remember, a margin specified in ems is relative to
+//     the element's font-size, not to the pages' base
+//     font size. So, for example, if we want a 1em margin
+//     (relative to the base font), we have to divide that
+//     length by the element's font-size:
+//     1em / 2em = 0.5em */
+//}
+
+//h2 {
+//  font-size: 1.2em;
+//  font-weight: normal;
+//  line-height: 1.3em;
+//  margin-top: 0.667em;
+//  /* Equivalent to 1em in the page's base font: 1 / 1.5 = 0.667em */
+//  margin-bottom: 0.3em;
+//  &.block-title {
+//    font-weight: normal;
+//    font-size: 1.1em;
+//  }
+//}
+
+//h3 {
+//  font-size: 1.1em;
+//  line-height: 1.3em;
+//  margin-top: 0.769em;
+//  /* Equivalent to 1em in the page's base font: 1 / 1.3 = 0.769 */
+//  margin-bottom: 0.769em;
+//}
+
+//h4, h5, h6 {
+//  font-size: 1em;
+//  line-height: 1.3em;
+//  margin-top: 0.909em;
+//  /* Equivalent to 1em in the page's base font: 1 / 1.1 = 0.909 */
+//  margin-bottom: 0.909em;
+//}
+
+//h1, h2, h3, h4, h5, h6 {
+//  color: #343434;
+//}
+
+#bottom {
+  font-size: 90%;
+}
+
+#closure {
+  font-size: 60%;
+  text-align: center;
+  padding: 0.5em 0;
+  border-top: 1px solid #BBBBBB;
+}
+
+/*4
+ * Block-level elements
+ */
+
+p, ul, ol, dl, pre, table, fieldset {
+  margin: 1em 0;
+}
+
+#feature p {
+  margin: 0;
+  padding: 0 0 1em 0;
+}
+
+blockquote {
+  background: url(../images/open-quote.png) no-repeat 0 0;
+  font: italic;
+  margin: 1em 0.5em;
+  p {
+    background: url(../images/close-quote.png) no-repeat right bottom;
+    margin-left: 2.2em;
+    padding-right: 1.5em;
+  }
+}
+
+/*
+ * Lists
+ *
+ * We need to standardize the list item indentation.
+ */
+
+ul, ol {
+  margin-left: 0;
+  padding-left: 2em;
+  /* LTR */
+}
+
+.block ul, .item-list ul {
+  margin: 1em 0;
+  padding: 0 0 0 1em;
+  /* LTR */
+}
+
+ul {
+  ul, ol {
+    margin: 0;
+  }
+}
+
+ol {
+  ol, ul {
+    margin: 0;
+  }
+}
+
+.block {
+  ul {
+    ul, ol {
+      margin: 0;
+    }
+  }
+  ol {
+    ol, ul {
+      margin: 0;
+    }
+  }
+}
+
+.item-list {
+  ul {
+    ul, ol {
+      margin: 0;
+    }
+  }
+  ol {
+    ol, ul {
+      margin: 0;
+    }
+  }
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.item-list ul li {
+  margin: 0;
+  padding: 0;
+  list-style: inherit;
+}
+
+ul.menu li {
+  margin: 0.15em 0 0.15em 0.5em;
+  padding: 0;
+}
+
+li {
+  &.expanded, &.collapsed, &.leaf {
+    margin: 0.15em 0 0.15em 0.5em;
+    padding: 0;
+  }
+}
+
+ul {
+  list-style-type: disc;
+  ul {
+    list-style-type: circle;
+    ul {
+      list-style-type: square;
+      ul {
+        list-style-type: circle;
+      }
+    }
+  }
+}
+
+ol {
+  list-style-type: decimal;
+  ol {
+    list-style-type: lower-alpha;
+    ol {
+      list-style-type: decimal;
+    }
+  }
+}
+
+dt {
+  margin: 0;
+  padding: 0;
+}
+
+dd {
+  margin: 0 0 0 2em;
+  padding: 0;
+}
+
+#bottomcontent-wrapper {
+  ul {
+    list-style-type: none;
+    list-style-image: none;
+  }
+  .block-aggregator ul li {
+    padding-bottom: 0.2em;
+  }
+}
+
+#aggregator {
+  .feed-item-title {
+    font-size: 1.1em;
+  }
+  .feed-item {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1em;
+  }
+  .feed-item-date {
+    color: #888;
+    font-size: 90%;
+  }
+  .feed-url, .feed-updated, .feed-item-categories {
+    color: #888;
+    font-size: 95%;
+  }
+  .feed-item-title a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+#bottom {
+  .item-list ul li {
+    padding: 0 0 0.2em;
+  }
+  li.leaf {
+    list-style-image: none;
+    list-style-type: none;
+  }
+}
+
+/*
+ * Links
+ *
+ * The order of link states are based on Eric Meyer's article:
+ * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
+ */
+/* Link Colors */
+
+.footersidebar #secondary-links {
+  list-style-image: none;
+  list-style-type: none;
+}
+
+#bottom {
+  .block ul, .item-list ul {
+    margin: 0;
+    padding: 0;
+  }
+  ul.menu li {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  li {
+    &.expanded, &.collapsed, &.leaf {
+      margin-left: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+.footersidebar ul.links li {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#bottom {
+  .footersidebar {
+    ul.menu li {
+      margin: 0.25em 0 0.25em 0.5em;
+      padding: 0;
+    }
+    li {
+      &.expanded, &.collapsed, &.leaf {
+        margin: 0.25em 0 0.25em 0.5em;
+        padding: 0;
+      }
+    }
+  }
+  ul.menu {
+    text-transform: normal;
+  }
+}
+
+.footersidebar ul.links {
+  text-transform: normal;
+  li {
+    display: block;
+  }
+}
+
+.block-menu! h2.title {}
+
+#header .block-menu h2.title {
+  display: none;
+}
+
+/*
+ * Link Colors
+ *
+ * The order of link states are based on Eric Meyer's article:
+ * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
+ */
+
+/* Links */
+
+a {
+  @include hover-link;
+  @include link-colors($link-color, $hover: $link-color-hover, $focus: $link-color-hover, $visited: $link-color-visited, $active: $link-color-active);
+  &:focus {
+    outline: thin dotted;
+  }
+  &:hover, &:active {
+    outline: none;
+  }
+  &.active {
+    color: $link-color-active;
+  }
+}
+
+#header {
+  #navigation a {
+    @include hover-link;
+    @include link-colors($link-color-alt, $hover: $link-color-hover-alt, $focus: $link-color-hover-alt, $visited: $link-color-visited-alt, $active: $link-color-active-alt);
+    &:focus {
+      outline: thin dotted;
+    }
+    &:hover, &:active {
+      outline: none;
+    }
+    &.active {
+      color: $link-color-active;
+    }
+  }
+}
+
+#bottom {
+  a {
+    &:link, &:visited {
+      color: #333;
+      text-decoration: none;
+    }
+    &:hover, &:focus {
+      color: #333;
+      text-decoration: underline;
+    }
+    &:active {
+      color: #333333;
+    }
+  }
+  li a.active {
+    color: #333333;
+  }
+}
+
+//#nav ul.menu li.active-trail, #superfish ul.menu li.active-trail, #nav ul.menu li:hover, #superfish ul.menu li:hover {
+//  background-color: tint(#8b1f04, 40%);
+//  color: #333 !important;
+//  opacity: 1;
+//}
+
+//#nav ul.menu li:hover a {
+//  color: #333;
+//}
+
+//#superfish {
+//  ul.menu li:hover a {
+//    color: #333;
+//  }
+//  .menu li li {
+//    background-color: #efefef;
+//  }
+//}
+
+/* hover and active-trail color */
+
+#header #navigation li {
+  a {
+    &.active, &:visited .active, &:hover {
+      background: shade(#8b1f04, 15%) !important;
+      color: #fff  !important;
+    }
+  }
+  li {
+    a:hover, li a:hover {
+      background: #fff !important;
+//      color: #555  !important;
+    }
+  }
+}
+
+/* superfish border seperator */
+
+#nav li {
+  border-right: 0px solid #ccc;
+}
+
+#superfish {
+  li {
+    border-right: 0px solid #ccc;
+  }
+  .menu li li {
+    &.first {
+      border-top: 1px solid #ccc;
+    }
+    li {
+      &.first {
+        border-top: 1px solid #ccc;
+      }
+      border-bottom: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+    }
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+  }
+}
+
+#footer {
+  a {
+    &:link, &:visited, &:hover, &:focus, &:active {
+      color: #000;
+    }
+  }
+  li a.active {
+    color: #000;
+  }
+}
+
+/*
+ * Tables
+ *
+ * Drupal provides table styling which is only useful for its admin section
+ * forms, so we override this default CSS. (We set it back in forms.css.)
+ */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  /* Prevent cramped-looking tables */
+}
+
+th, thead th {
+  text-align: left;
+  /* LTR */
+  padding: 0.5em;
+  border-bottom: none;
+}
+
+tbody {
+  th {
+    text-align: left;
+    /* LTR */
+    padding: 0.5em;
+    border-bottom: none;
+  }
+  td! {}
+}
+
+thead! th {}
+
+tbody {
+  td {
+    vertical-align: top;
+  }
+  border-top: none;
+}
+
+/*
+ * Abbreviations
+ */
+
+abbr {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+  white-space: nowrap;
+  &.created {
+    border: none;
+    cursor: auto;
+    white-space: normal;
+  }
+}
+
+/*
+ * Images
+ */
+
+img {
+  border: 0;
+}
+
+/*
+ * Horizontal rules
+ */
+
+hr {
+  height: 1px;
+  border: 1px solid #666;
+}
+
+/*
+ * Forms
+ */
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+#system-themes-form table {
+  font-size: 75%;
+}
+
+fieldset {
+  margin: 1em 0;
+  padding: 0.4em;
+  border: 1px solid #DDDDDD;
+}
+
+/* custom */
+
+.float-right-front {
+  float: right;
+  margin-top: -25px;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}

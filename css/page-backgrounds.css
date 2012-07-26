@@ -1,0 +1,46 @@
+/* $Id: page-backgrounds.css,v 1.8 2009/11/04 20:57:49 johnalbin Exp $ */
+/**
+ * @file
+ * Page Background Styling
+ *
+ * The default layout method of Zen doesn't give themers equal-height columns.
+ * However, equal-height columns are difficult to achieve and totally
+ * unnecessary. Instead, use the Faux Columns method described in the following
+ * ALA article:
+ *   http://www.alistapart.com/articles/fauxcolumns/
+ */
+body.front, body.not-front {
+  background-image: url('../images/pwc-bg.jpg?1343325585');
+  background-repeat: repeat-y;
+  background-position: top left;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#topbar-wrapper {
+  border-top: 0;
+}
+
+#page {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px;
+  background: none repeat scroll 0 0 padding-box rgba(255, 255, 255, 0.4);
+  -webkit-background-origin: padding;
+  -moz-background-origin: padding;
+  -ms-background-origin: padding-box;
+  -o-background-origin: padding-box;
+  background-origin: padding-box;
+  border-top: 2px solid #ae624f;
+  border-left: 2px solid #a34c36;
+  border-right: 2px solid #8c2004;
+  border-bottom: 2px solid #701903;
+  margin-top: 1.42857em;
+  margin-bottom: 1.42857em;
+}
+
+#headercontent-wrapper .column.HeaderRight #secondary-menu {
+  background: #8b1f04;
+}

@@ -1,0 +1,40 @@
+@import "base";
+
+/**
+ * @file
+ * Navigation Styling
+ */
+
+/*
+ * The active item in a Drupal menu
+ */
+
+li! a.active, #navigation!, .region-navigation! {}
+
+/*
+ * Navigation bar
+ */
+
+#navigation h2.title {
+  display: none;
+}
+
+#navbar-wrapper {
+  background: {
+    color: rgb(139, 31, 4);
+  }
+}
+
+/*
+ * Primary and Secondary menu links
+ */
+
+#main-menu!, #secondary-menu!, .block-menu!, .block-menu_block! {}
+
+/*
+ * Menu blocks
+ */
+
+/*
+ * "Menu block" blocks. See http://drupal.org/project/menu_block
+ */

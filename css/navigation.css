@@ -1,0 +1,27 @@
+/**
+ * @file
+ * Navigation Styling
+ */
+/*
+ * The active item in a Drupal menu
+ */
+/*
+ * Navigation bar
+ */
+#navigation h2.title {
+  display: none;
+}
+
+#navbar-wrapper {
+  background-color: #8b1f04;
+}
+
+/*
+ * Primary and Secondary menu links
+ */
+/*
+ * Menu blocks
+ */
+/*
+ * "Menu block" blocks. See http://drupal.org/project/menu_block
+ */
