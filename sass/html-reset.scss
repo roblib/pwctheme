@@ -58,7 +58,7 @@ h1 {
 }
 
 h2 {
-  @include adjust-font-size-to($font-size-xxl,2);
+  @include adjust-font-size-to($font-size-xxl,1);
   @include margin-leader(0, $font-size-xxl);
   @include margin-trailer(1, $font-size-xxl);
 }

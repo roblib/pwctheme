@@ -1,6 +1,6 @@
 html {
-  font-size: 87.5%;
-  line-height: 1.42857em;
+  font-size: 100%;
+  line-height: 1.5em;
 }
 
 /* Headings/small */
@@ -16,52 +16,52 @@ h6 {
 }
 
 h1 {
-  font-size: 2.14286em;
-  line-height: 1.33333em;
+  font-size: 1.875em;
+  line-height: 1.6em;
   margin-top: 0em;
-  margin-bottom: 0.66667em;
+  margin-bottom: 0.8em;
 }
 
 h2 {
-  font-size: 1.71429em;
-  line-height: 1.66667em;
+  font-size: 1.25em;
+  line-height: 1.2em;
   margin-top: 0em;
-  margin-bottom: 0.83333em;
+  margin-bottom: 1.2em;
 }
 
 h3 {
-  font-size: 1.28571em;
-  line-height: 1.11111em;
+  font-size: 1.125em;
+  line-height: 1.33333em;
   margin-top: 0em;
-  margin-bottom: 1.11111em;
+  margin-bottom: 1.33333em;
 }
 
 h4 {
-  font-size: 1.14286em;
-  line-height: 1.25em;
+  font-size: 1em;
+  line-height: 1.5em;
   margin-top: 0em;
-  margin-bottom: 1.25em;
+  margin-bottom: 1.5em;
 }
 
 h5 {
-  font-size: 1em;
-  line-height: 1.42857em;
+  font-size: 0.875em;
+  line-height: 1.71429em;
   margin-top: 0em;
-  margin-bottom: 1.42857em;
+  margin-bottom: 1.71429em;
 }
 
 h6 {
-  font-size: 1em;
-  line-height: 1.42857em;
+  font-size: 0.875em;
+  line-height: 1.71429em;
   margin-top: 0em;
-  margin-bottom: 1.42857em;
+  margin-bottom: 1.71429em;
   color: #acacac;
 }
 
 small {
   margin-top: 0em;
-  margin-bottom: 2em;
-  font-size: 0.71429em;
+  margin-bottom: 2.4em;
+  font-size: 0.625em;
 }
 
 h1 small,
@@ -81,8 +81,8 @@ html {
 }
 
 #skip-link, #page {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 body, caption, th, td, input, textarea, select, option, legend, fieldset {

@@ -1,8 +1,8 @@
 // Base
 
 // Vertical Rhythm
-$base-line-height:             20px;
-$base-font-size:               14px;
+$base-line-height:             24px;
+$base-font-size:               16px;
 $relative-font-sizing:         true; // output px instead of em's. cuz em's are annoying.
 $base-em-ratio:                1em / $base-font-size;
 
@@ -14,7 +14,7 @@ $font-size-normal:             $base-font-size;
 $font-size-md:                 14px;
 $font-size-lg:                 16px;
 $font-size-xl:                 18px;
-$font-size-xxl:                24px;
+$font-size-xxl:                20px;
 $font-size-xxxl:               30px;
 
 // Vertical Rhythm borders
@@ -38,6 +38,11 @@ $link-color-alt:               #fff;
 $link-color-hover-alt:         adjust-color($link-color-alt, $lightness: -10);
 $link-color-visited-alt:       $link-color-alt;
 $link-color-active-alt:        adjust-color($link-color-hover-alt, $lightness: -15);
+$link-color-alt2:              #fab550;
+$link-color-hover-alt2:        adjust-color($link-color-alt2, $lightness: 0, $saturation: 25);
+$link-color-visited-alt2:      $link-color-alt2;
+$link-color-active-alt2:       adjust-color($link-color-hover-alt2, $lightness: 0, $saturation: 25);
+
 
 // Text Colors
 $text-color:                   #222;

@@ -37,8 +37,8 @@ body.front, body.not-front {
   border-left: 2px solid #a34c36;
   border-right: 2px solid #8c2004;
   border-bottom: 2px solid #701903;
-  margin-top: 1.42857em;
-  margin-bottom: 1.42857em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 #headercontent-wrapper .column.HeaderRight #secondary-menu {

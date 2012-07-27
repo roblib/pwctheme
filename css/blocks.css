@@ -1,4 +1,3 @@
-/* $Id: blocks.css,v 1.4 2009/11/05 11:05:39 johnalbin Exp $ */
 /**
  * @file
  * Block Styling
@@ -54,8 +53,60 @@
 }
 
 #feature .block {
-  padding-top: 15px;
   padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+#feature .FeatureRight .block {
+  margin-top: 1.5em;
+  padding-top: 20px;
+}
+#feature .FeatureMain .block {
+  margin-top: 1.35em;
+  padding-left: 13px;
+}
+#feature .FeatureMain .block h1 {
+  margin-bottom: 0;
+}
+
+#feature .FeatureRight .region-feature-right {
+  padding-right: 20px;
+}
+#feature .FeatureRight .block {
+  line-height: 32px;
+  color: #fff;
+  background-color: #761a03;
+  -webkit-box-shadow: inset 0 0 5px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 5px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 5px 3px rgba(0, 0, 0, 0.3);
+}
+#feature .FeatureRight .block a {
+  text-decoration: none;
+  color: #fab550;
+}
+#feature .FeatureRight .block a:hover {
+  text-decoration: underline;
+}
+#feature .FeatureRight .block a:visited {
+  color: #fab550;
+}
+#feature .FeatureRight .block a:focus {
+  color: #ffb64b;
+}
+#feature .FeatureRight .block a:hover {
+  color: #ffb64b;
+}
+#feature .FeatureRight .block a:active {
+  color: #ffb64b;
+}
+#feature .FeatureRight .block a:focus {
+  outline: thin dotted;
+}
+#feature .FeatureRight .block a:hover, #feature .FeatureRight .block a:active {
+  outline: none;
+}
+#feature .FeatureRight .block a.active {
+  color: #fff;
 }
 
 .region-sidebar-first .block .content, .region-sidebar-second .block .content {

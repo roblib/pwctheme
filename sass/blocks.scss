@@ -1,4 +1,4 @@
-/* $Id: blocks.css,v 1.4 2009/11/05 11:05:39 johnalbin Exp $ */
+@import 'base';
 
 /**
  * @file
@@ -70,9 +70,48 @@
   padding: 0 10px 0 0;
 }
 
-#feature .block {
-  padding-top: 15px;
-  padding-bottom: 10px;
+#feature {
+  .block {
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .FeatureRight .block {
+    @include margin-leader(1);
+    padding-top: 20px;
+  }
+  .FeatureMain .block {
+    @include margin-leader(0.9);
+    padding-left: 13px;
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+#feature .FeatureRight {
+  .region-feature-right {
+    padding-right: 20px;
+  }
+  .block {
+  line-height: 32px;
+  color: #fff;
+  background-color: #761a03; //#8b1F04
+  @include single-box-shadow(rgba(0, 0, 0, 0.3), 0, 0, $spread: 3px, $inset: inset);
+  a {
+      @include hover-link;
+      @include link-colors($link-color-alt2, $hover: $link-color-hover-alt2, $focus: $link-color-hover-alt2, $visited: $link-color-visited-alt2, $active: $link-color-active-alt2);
+      &:focus {
+        outline: thin dotted;
+      }
+      &:hover, &:active {
+        outline: none;
+      }
+      &.active {
+        color: #fff;
+      }
+    }
+  }
 }
 
 .region-sidebar-first .block .content, .region-sidebar-second .block .content {
