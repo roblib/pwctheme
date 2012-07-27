@@ -1,0 +1,49 @@
+#content-fedora table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+#content-fedora table td img {
+  text-align: center;
+}
+#content-fedora .fedora_detailed_list table {
+  background: #EAEAEA;
+  width: 100%;
+}
+#content-fedora .fedora_detailed_list form {
+  padding: 0 0 1.3em 0;
+}
+#content-fedora .fedora_detailed_list table {
+  border: 1px solid #bbb;
+}
+#content-fedora .fedora_detailed_list table td, #content-fedora .fedora_detailed_list table th {
+  padding: 0 1em;
+}
+#content-fedora .fedora_detailed_list table td {
+  border: 1px solid #bbb;
+}
+
+.fedora_detailed_list h3 {
+  margin: 0;
+}
+.fedora_detailed_list table td {
+  vertical-align: bottom;
+}
+.fedora_detailed_list select {
+  width: 100px;
+}
+
+.islandora-solr-detail td img, .mapgrid img {
+  border-color: #EAEAEA #AAAAAA #AAAAAA #EAEAEA;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.islandora_solr_search_results_object th {
+  width: 120px;
+}
+
+.page-fedora-repository-pwcimages---collection img {
+  max-width: 100%;
+  *width: 100%;
+}
