@@ -57,3 +57,24 @@
     width: 100%;
   }
 }
+
+.page-pwc-search {
+  form#block-islandora_solr_search-advanced select#edit-type1,
+  form#block-islandora_solr_search-advanced select#edit-type2,
+  form#block-islandora_solr_search-advanced select#edit-type3 {
+    width: 18%;
+    float: left;
+    display: inline;
+  }
+}
+
+.page-pwc-search {
+    form#block-islandora_solr_search-advancedm input#edit-fedora-terms1,
+    form#block-islandora_solr_search-advanced input#edit-fedora-terms2,
+    form#block-islandora_solr_search-advanced input#edit-fedora-terms3,
+    form#block-islandora_solr_search-advanced input#edit-islandora-simple-search-query {
+    width: 80%;
+    margin-left: 20px;
+    width: 80%;
+  }
+}
