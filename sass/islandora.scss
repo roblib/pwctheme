@@ -82,7 +82,7 @@
 
 #block-islandora_solr_search-advanced {
   .block {
-    h2 {
+    h2.title {
       @include margin-leader(1);
     }
   }

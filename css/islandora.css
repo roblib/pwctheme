@@ -64,6 +64,6 @@
   width: 80%;
 }
 
-#block-islandora_solr_search-advanced .block h2 {
+#block-islandora_solr_search-advanced .block h2.title {
   margin-top: 1.5em;
 }
