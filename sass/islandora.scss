@@ -1,3 +1,5 @@
+@import 'base';
+
 #content-fedora {
   table {
     margin-left: auto;
@@ -75,5 +77,13 @@
     #block-islandora_solr_search-advanced form input#edit-islandora-simple-search-query {
     margin-left: 2%;
     width: 80%;
+  }
+}
+
+#block-islandora_solr_search-advanced {
+  .block {
+    h2 {
+      @include margin-leader(1);
+    }
   }
 }
