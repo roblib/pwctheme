@@ -73,6 +73,7 @@
   padding-right: 20px;
 }
 #feature .FeatureRight .block {
+  height: 501px;
   line-height: 32px;
   color: #fff;
   background-color: #761a03;
