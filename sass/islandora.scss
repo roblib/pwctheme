@@ -80,10 +80,6 @@
   }
 }
 
-#block-islandora_solr_search-advanced {
-  .block {
-    h2.title {
-      @include margin-leader(1);
-    }
-  }
+#block-islandora_solr_search-advanced .block h2.title {
+  @include padding-leader(1);
 }
