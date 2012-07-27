@@ -384,6 +384,7 @@ a.active {
 }
 #header #navigation a:hover, #header #navigation a:active {
   outline: none;
+  text-decoration: none;
 }
 #header #navigation a.active {
   color: #801a00;

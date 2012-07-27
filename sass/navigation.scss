@@ -5,36 +5,39 @@
  * Navigation Styling
  */
 
-/*
- * The active item in a Drupal menu
- */
-
-li! a.active, #navigation!, .region-navigation! {}
-
-/*
- * Navigation bar
- */
-
+// Navbar
 #navigation h2.title {
   display: none;
 }
 
+// Navbar ribbon
 #navbar-wrapper {
+  padding-right: 55px;
+  ul li.first {
+    padding-left: 25px;
+  }
   background: {
     color: rgb(139, 31, 4);
   }
+  position:relative;
+  float:left;
+  clear:both;
+  margin-left:-28px;
+  &:before, &:after {
+    content:" ";
+    background: image-url('ribbon.png');
+    display:block;
+    width:10px;
+    height:10px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin-bottom:-10px;
+    z-index:-1;
+  }
+  &:after {
+    background: image-url('ribbon-2.png');
+    left: auto;
+    right: 0;
+  }
 }
-
-/*
- * Primary and Secondary menu links
- */
-
-#main-menu!, #secondary-menu!, .block-menu!, .block-menu_block! {}
-
-/*
- * Menu blocks
- */
-
-/*
- * "Menu block" blocks. See http://drupal.org/project/menu_block
- */
