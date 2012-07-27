@@ -43,7 +43,7 @@
   width: 120px;
 }
 
-.page-fedora-repository-pwcimages---collection img {
+.page-fedora-repository-pwcimages---collection table td img {
   max-width: 100%;
-  *width: 100%;
+  width: 100%;
 }
