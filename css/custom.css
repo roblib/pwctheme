@@ -1,0 +1,23 @@
+.book_add_child a,
+.book_add_child a:link,
+.book_add_child a:visited,
+.book_printer a,
+.book_printer a:link,
+.book_printer a:visited,
+.comment_add a,
+.comment_add a:link,
+.comment_add a:visited,
+.print_html a,
+.print_html a:link,
+.print_html a:visited,
+.button, .block-admin-configure .form-submit,
+input[type="submit"],
+#views-ajax-pad .form-buttons .form-submit,
+.teaser-button, .content-overview-links a,
+.content-overview-links a:link,
+.content-overview-links a:visited,
+.container-inline a,
+.container-inline a:link,
+.container-inline a:visited {
+  padding: 0.2em 0.5em;
+}

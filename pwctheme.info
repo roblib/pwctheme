@@ -62,7 +62,7 @@ stylesheets[all][]   = css/islandora.css
 ; stylesheets[all][]   = css/elegant.css
 ; stylesheets[all][]   = css/islandvoices.css
 ; stylesheets[all][]   = css/designer.css
-; stylesheets[all][]   = css/custom.css
+stylesheets[all][]   = css/custom.css
 ; stylesheets[handheld][] = css/mobile.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
 
