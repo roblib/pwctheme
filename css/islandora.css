@@ -51,7 +51,7 @@
 .page-pwc-search #block-islandora_solr_search-advanced form select#edit-type1,
 .page-pwc-search #block-islandora_solr_search-advanced form select#edit-type2,
 .page-pwc-search #block-islandora_solr_search-advanced form select#edit-type3 {
-  width: 18%;
+  width: 15%;
   float: left;
   display: inline;
 }
@@ -60,7 +60,6 @@
 .page-pwc-search #block-islandora_solr_search-advanced form input#edit-fedora-terms2,
 .page-pwc-search #block-islandora_solr_search-advanced form input#edit-fedora-terms3,
 .page-pwc-search #block-islandora_solr_search-advanced form input#edit-islandora-simple-search-query {
-  width: 80%;
-  margin-left: 20px;
+  margin-left: 2%;
   width: 80%;
 }
