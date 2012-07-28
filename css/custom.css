@@ -44,3 +44,8 @@ input[type="submit"],
 #user-login-form .item-list ul li {
   list-style: none;
 }
+
+.front #content #content-top-wrapper .section {
+  border-bottom: 0;
+  margin-bottom: 1.5em;
+}

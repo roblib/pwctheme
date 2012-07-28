@@ -1,3 +1,5 @@
+@import 'base';
+
 .book_add_child a,
 .book_add_child a:link,
 .book_add_child a:visited,
@@ -47,4 +49,9 @@ input[type="submit"],
       list-style: none;
     }
   }
+}
+
+.front #content #content-top-wrapper .section {
+  border-bottom: 0;
+  @include margin-trailer(1);
 }
