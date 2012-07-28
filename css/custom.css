@@ -34,3 +34,10 @@ input[type="submit"],
 #block-views-collectionthumbs-block_1 table td.col-2 {
   padding-left: 20px;
 }
+
+#user-login-form .item-list ul {
+  padding: 0;
+}
+#user-login-form .item-list ul li {
+  list-style: none;
+}
