@@ -35,6 +35,9 @@ input[type="submit"],
   padding-left: 20px;
 }
 
+#user-login-form .item-list {
+  padding-left: 0;
+}
 #user-login-form .item-list ul {
   padding: 0;
 }
