@@ -440,8 +440,11 @@
 #content-top-wrapper.in1 .column {
   width: 100%;
 }
-#content-top-wrapper.in2 .column {
-  width: 50%;
+#content-top-wrapper.in2 .column.ContentTop1 {
+  width: 75%;
+}
+#content-top-wrapper.in2 .column.ContentTop2 {
+  width: 25%;
 }
 #content-top-wrapper.in2 .column.ContentTop2 .block {
   padding-right: 0px;

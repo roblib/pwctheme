@@ -487,8 +487,11 @@
   &.in1 .column {
     width: 100%;
   }
-  &.in2 .column {
-    width: 50%;
+  &.in2 .column.ContentTop1 {
+    width: 75%;
+  }
+  &.in2 .column.ContentTop2 {
+    width: 25%;
   }
   .block! {}
   &.in2 .column {
