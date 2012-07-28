@@ -21,3 +21,8 @@ input[type="submit"],
 .container-inline a:visited {
     padding: 0.2em 0.5em;
 }
+
+#block-views-collectionthumbs-block_1 table td.col-1,
+#block-views-collectionthumbs-block_1 table td.col-2 {
+  width: 50%;
+}
