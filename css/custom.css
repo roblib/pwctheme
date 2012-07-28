@@ -22,9 +22,11 @@ input[type="submit"],
   padding: 0.2em 0.5em;
 }
 
-#block-views-collectionthumbs-block_1 h2.title {
+#block-views-collectionthumbs-block_1 h2.title,
+#block-views-collectionthumbs-block_2 h2.title {
   padding-top: 0.475em;
 }
+
 #block-views-collectionthumbs-block_1 table td.col-1,
 #block-views-collectionthumbs-block_1 table td.col-2 {
   width: 50%;
