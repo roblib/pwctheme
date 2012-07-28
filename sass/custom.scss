@@ -38,3 +38,10 @@ input[type="submit"],
     padding-left: 20px;
   }
 }
+
+#user-login-form .item-list ul {
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
