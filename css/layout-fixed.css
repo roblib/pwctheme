@@ -75,10 +75,10 @@
 }
 
 .front.sidebar-second #content {
-  width: 620px;
+  width: 600px;
   margin-left: 0;
   /* LTR */
-  margin-right: -620px;
+  margin-right: -600px;
   /* LTR */
   /* Negative value of #content's width + left margin. */
 }
@@ -220,11 +220,11 @@
 .front .region-sidebar-second {
   float: left;
   /* LTR */
-  width: 340px;
-  margin-left: 620px;
+  width: 360px;
+  margin-left: 600px;
   /* LTR */
   /* Width of content + sidebar-first. */
-  margin-right: -860px;
+  margin-right: -840px;
   /* LTR */
   /* Negative value of .region-sidebar-second's width + left margin. */
   padding: 0;
